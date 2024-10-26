@@ -1,0 +1,32 @@
+
+                                                                ____                                     
+                                                               /\  _`\                                   
+ __  __    ___   __  __  _ __         ___   _____     __    ___\ \,\L\_\  _____     __      ___     __   
+/\ \/\ \  / __`\/\ \/\ \/\`'__\      / __`\/\ '__`\ /'__`\/' _ `\/_\__ \ /\ '__`\ /'__`\   /'___\ /'__`\ 
+\ \ \_\ \/\ \L\ \ \ \_\ \ \ \/      /\ \L\ \ \ \L\ /\  __//\ \/\ \/\ \L\ \ \ \L\ /\ \L\.\_/\ \__//\  __/ 
+ \/`____ \ \____/\ \____/\ \_\      \ \____/\ \ ,__\ \____\ \_\ \_\ `\____\ \ ,__\ \__/.\_\ \____\ \____\
+  `/___/> \/___/  \/___/  \/_/       \/___/  \ \ \/ \/____/\/_/\/_/\/_____/\ \ \/ \/__/\/_/\/____/\/____/
+     /\___/                                   \ \_\                         \ \_\                        
+     \/__/                                     \/_/                          \/_/                        
+
+
+
+PROBLEMS
+    resolve problem with mysql CLI
+    continue to work on the files structure
+    create github repo
+    
+    modify mySQL task to work properly
+    modify .dockerignores to work properly
+    modify docker-compose.yml to work properly
+    modify DockerFiles to work properly
+    modify .env to work properly
+    take count of the different names of the DockerFiles
+ANNOTATIONS
+
+    you're using a database in your local machine for development
+        you need to host it on the cloud in order for the application to be scalable
+    
+    create database structure in a separate file 
+    connect application to the database 
+    replace the favicon.ico with the current logo of this project

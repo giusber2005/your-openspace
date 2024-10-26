@@ -1,0 +1,25 @@
+# Use the official Deno image as the base image
+FROM denoland/deno:alpine
+
+# Set environment variables
+ENV DENO_DIR=/deno_dir
+ENV PORT=8000
+
+# Create app directory
+WORKDIR /app
+
+# Copy the manifest and lock files
+COPY deno.json .
+COPY deno.lock .
+
+# Cache the dependencies (only if these files change)
+RUN deno cache deno.json
+
+# Copy the rest of your application files
+COPY . .
+
+# Expose the port the app runs on
+EXPOSE $PORT
+
+# Run the application
+CMD ["deno", "run", "--allow-net", "--allow-read", "your_start_file.ts"]

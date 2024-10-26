@@ -1,0 +1,15 @@
+version: '3.8'  # Specify the version of the Docker Compose file
+
+services:
+  app:
+    build:
+      context: .  # Use the current directory as the build context
+      dockerfile: Dockerfile  # Specify the Dockerfile to use
+    ports:
+      - "8000:8000"  # Map port 8000 of the host to port 8000 of the container
+    environment:
+      - DENO_DIR=/deno_dir  # Set environment variable for Deno
+      - PORT=8000  # Set the application port
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+    command: ["deno", "run", "--allow-net", "--allow-read", "your_start_file.ts"]  # Command to run the app
